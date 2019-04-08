@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filters App (JavaScript)</title>
+</head>
+<body>
+
+    <div id="app">
+        <header class="header">
+            <h1>Filters App</h1>
+        </header>
+        <div class="content">
+            <div class="filter">
+                <div class="img-container">
+                    <div class="img" id="main-img" style="background-image: url('http://www.latestseotutorial.com/wp-content/uploads/2016/12/Deer-HD-nature-images.png');"></div>
+                </div>
+            </div>
+            <!--<div class="filters">
+                filters
+            </div>-->
+        </div>
+        <aside class="sidebar">
+            <div class="widget settings">
+                <h3>Filters:</h3>
+                <div class="settings__container">
+                    <div class="settings__item">
+                        <label for="brightness">
+                            <div>Brightness</div>
+                            <div class="settings__value">100</div>
+                        </label>
+                        <input type="range" id="brightness" step="1" min="0" max="200" value="100">
+                    </div>
+                    <div class="settings__item">
+                        <label for="contrast">
+                            <div>Contrast</div>
+                            <div class="settings__value">100</div>
+                        </label>
+                        <input type="range" id="contrast" step="1" min="0" max="200" value="100">
+                    </div>
+                    <div class="settings__item">
+                        <label for="saturate">
+                            <div>Saturate</div>
+                            <div class="settings__value">100</div>
+                        </label>
+                        <input type="range" id="saturate" step="1" min="0" max="100" value="100">
+                    </div>
+                    <div class="settings__item">
+                        <label for="blur">
+                            <div>Blur</div>
+                            <div class="settings__value">0</div>
+                        </label>
+                        <input type="range" id="blur" step="0.1" min="0" max="10" value="0">
+                    </div>
+                    <div class="settings__item">
+                        <label for="hue">
+                            <div>Hue</div>
+                            <div class="settings__value">0</div>
+                        </label>
+                        <input type="range" id="hue" step="1" min="-360" max="360" value="0">
+                    </div>
+                    <div class="settings__item">
+                        <label for="sepia">
+                            <div>Sepia</div>
+                            <div class="settings__value">0</div>
+                        </label>
+                        <input type="range" id="sepia" step="1" min="0" max="100" value="0">
+                    </div>
+                </div>
+            </div>
+            <div class="widget reset">
+                <h3>Reset all filters:</h3>
+                <div class="reset__container">
+                    <button id="reset__button" class="btn">Reset</button>
+                </div>
+            </div>
+            <div class="widget add-image">
+                <h3>Add image url:</h3>
+                <div class="add-image__container">
+                    <input type="text" id="img-url-input">
+                    <button class="btn" id="img-url-btn">Add</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>
